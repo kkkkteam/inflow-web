@@ -1,0 +1,92 @@
+.container-inflow{
+    width:100%;
+}
+
+.content{
+    max-width: 1000px;
+    padding: 2%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.porduct{
+    border-radius: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+.porduct img{
+    height: auto;
+    aspect-ratio: 1/1;
+}
+.form-style .style-input{
+    min-width: 250px;
+}
+.form-style .style-textarea{
+    min-width: 300px;
+}
+
+
+body{
+    background-color:black;
+    color:aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:700;
+    position: relative;
+}
+
+video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    transform: translateX(-50%);
+    z-index: -10;
+  }
+
+.page-content{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.heading-style h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.part{
+    background-color:rgba(233,233,233,.2);
+    border-radius: 20px;
+    min-height: 30vh;
+    padding-top:20px;
+    margin: 5px;
+    width: 45%;
+}
+
+.logo{
+    width:150px;
+    height: auto;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+@media screen and (max-width:768px) {
+    .part{
+        min-height: 20vh;
+        width: 100%;
+    }
+
+    h4, h2{
+        font-size: x-larger;
+    }
+    
+}
