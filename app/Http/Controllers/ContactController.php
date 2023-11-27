@@ -20,7 +20,7 @@ class ContactController extends Controller
         ]);
 
         // email to client
-        ContactController::composeEmailToClient($request->name, $request->email, $request->subject, $request->message );
+        $this->composeEmailToClient($request->name, $request->email, $request->subject, $request->message );
         // email to staff
 
 

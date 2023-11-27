@@ -23,16 +23,16 @@
 
         <div class="page-content">
             <!-- Title Name -->
-            <div class="container-inflow heading-style">
+            <section class="container-inflow heading-style">
                 <div class="content text-center">
                     <h2>Welcome to <img class="logo" src='{{ url("image/logo_transparent.png")}}' ><br>Inflow Technology Limited</h2>
                     <p>We are a startup company based in Hong Kong that specializes in website development, AI and application development, and other innovative technologies. Our mission is to be at the forefront of the next generation of technology. Let us help you build the future!</p>
                 </div>
 
-            </div>
+            </section>
 
             <!-- introduction -->
-            <div class="container-inflow introduction-style">
+            <section class="container-inflow">
                 <div class="content">
                     <h2>About Inflow Technology Limited</h2>
                     <div class="row">
@@ -56,10 +56,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- introduction -->
-            <div class="container-inflow">
+            <section class="container-inflow">
                 <div class="content">
                     <h2>Our Mission and Values</h2>
                     <div class="row">
@@ -79,9 +79,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="container-inflow">
+            <section class="container-inflow">
                 <div class="content">
                     <h2>Our Products and Services</h2>
                     <div class="row">
@@ -97,9 +97,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
-            <div class="container-inflow">
+            <section class="container-inflow">
                 <div class="content">
                     <h2>Contact Information</h2>
                     <div class="row">
@@ -115,8 +115,8 @@
                         </div>
                     </div>
                     <!-- <div class="row">
-                        <div class="col-12">
-                            <h4>Reach us directly</h4>
+                        <div class="col-12 part">
+                            <h4>Message Box</h4>
                             <x-form :action="route('contact.store')" method="post" class="form-style" >
                                 @csrf
                                 <x-form-input class="style-input" type="text" name="name" id="name" placeholder="Name" />
@@ -127,10 +127,10 @@
                                 <x-form-submit class="btn btn-primary"/>
                             </x-form >
                         </div>
-                    </div> -->
+                    </div>  -->
                 </div>
-            </div>
+            </section>
         </div>
-
+        <script src="./js/style.js"></script>
     </body>
 </html>
