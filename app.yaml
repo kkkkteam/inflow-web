@@ -16,11 +16,16 @@
 #   script: auto
 
 
-runtime: php81 # language of the app
+runtime: php # language of the app
 env: flex     # let app engine know we use flexible environment
-runtime_config:
- document_root: public   #folder where index.php is
+
+    #folder where index.php is
 # Ensure we skip ".env", which is only for local development
+runtime_config:
+    operating_system: "ubuntu22"
+    runtime_version: "8.1"
+    document_root: public
+
 skip_files:
  - .env #we want to skip this to make sure we don’t mess stuff up on the server
 env_variables:
