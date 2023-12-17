@@ -16,7 +16,7 @@
 #   script: auto
 
 
-runtime: php  # language of the app
+runtime: php # language of the app
 env: flex     # let app engine know we use flexible environment
 runtime_config:
  document_root: public   #folder where index.php is
@@ -54,3 +54,11 @@ beta_settings:
    # for Cloud SQL, set this value to the Cloud SQL connection name,
    # e.g. "project:region:cloudsql-instance"
    cloud_sql_instances: project:cloudsql-instance
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 2
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
